@@ -22,7 +22,12 @@ public class Portfolio {
     )
     private Client clientID;
 
-    public Portfolio() {
+    protected Portfolio(){
+        
+    }
+
+    public Portfolio(Client client) {
+        this.clientID = client;
     }
 
     public Long getPortfolioId() {

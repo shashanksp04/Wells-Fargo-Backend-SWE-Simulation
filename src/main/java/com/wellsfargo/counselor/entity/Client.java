@@ -30,7 +30,12 @@ public class Client {
     @Column(nullable = false)
     private String contact;
 
-    public Client(String firstName, String lastName, String contact) {
+    protected Client(){
+        
+    }
+
+    public Client(Advisor advisor, String firstName, String lastName, String contact) {
+        this.advisorID = advisor;
         this.firstName = firstName;
         this.lastName = lastName;
         this.contact = contact;

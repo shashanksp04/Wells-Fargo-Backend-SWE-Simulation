@@ -38,7 +38,12 @@ public class Security {
     @Column(nullable = false)
     private int quantity;
 
-    public Security(String name, String category, String purchaseDate, String purchasePrice, int quantity) {
+    protected Security(){
+        
+    }
+
+    public Security(Portfolio portfolio, String name, String category, String purchaseDate, String purchasePrice, int quantity) {
+        this.portfolioID = portfolio;
         this.name = name;
         this.category = category;
         this.purchaseDate = purchaseDate;
