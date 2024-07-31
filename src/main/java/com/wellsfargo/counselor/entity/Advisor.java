@@ -28,10 +28,6 @@ public class Advisor {
     @Column(nullable = false)
     private String email;
 
-    protected Advisor() {
-
-    }
-
     public Advisor(String firstName, String lastName, String address, String phone, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
